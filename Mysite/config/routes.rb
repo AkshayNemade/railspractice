@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
   
   
+  get 'users/new'
+
+  devise_for :users
   root 'pages#index'
   #get 'pages/index'
+  
 
   get '/home' => 'pages#home'
 
